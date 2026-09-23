@@ -25,6 +25,8 @@ Keep a stable person identifier, display name, protected template, consent/enrol
 
 Support single-person mode (only its selected enrolled person) and shared mode (all enabled, independently enrolled people). Keep an open-set unknown result even when only two people are expected. Removing assistant playback and excluding one person does NOT prove the remainder is the other person. Recordings with overlapping voices require target-speaker separation and source-bound validation; unclear residual audio stays unassigned.
 
+Check identity, command intent, and permission separately. A recognized person's ordinary conversation is not a command: require the app's explicit command route or interaction mode. Use configured permissions; never grant a role from a name or voice.
+
 ## Per-turn state machine
 
 Start in `closed`.
